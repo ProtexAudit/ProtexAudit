@@ -1,64 +1,72 @@
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
-  background: #0B0B0B;
+  background: #0d0d0d;
   color: white;
+  font-family: Arial, sans-serif;
 }
 
-.navbar {
-  display: flex;
-  align-items: center;
-  padding: 15px 40px;
-  background: #111;
-  border-bottom: 1px solid #D4AF37;
+header {
+  padding: 20px 40px;
 }
 
-.logo img {
-  height: 60px;
-}
-
-.nav-title {
+.logo {
+  color: #d4af37;
   font-size: 22px;
-  font-weight: 600;
-  margin-left: 15px;
-  color: #D4AF37;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
 .hero {
   text-align: center;
-  padding: 80px 20px;
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
 }
 
 .hero h1 {
-  font-size: 42px;
-  background: linear-gradient(to right, #C9A227, #FFD700);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #d4af37;
 }
 
-.search-box {
-  margin-top: 40px;
+.scanner {
+  text-align: center;
+  margin: 30px 0;
 }
 
-.search-box input, select {
+select, input {
   padding: 12px;
-  width: 300px;
-  border-radius: 8px;
-  border: none;
-  margin: 5px;
+  margin: 10px;
+  width: 280px;
+  background: #1a1a1a;
+  border: 1px solid #d4af37;
+  color: white;
 }
 
-.search-box button {
-  padding: 12px 25px;
-  background: linear-gradient(to right, #C9A227, #FFD700);
+button {
+  padding: 12px 20px;
+  background: #d4af37;
   border: none;
-  border-radius: 8px;
+  color: black;
+  font-weight: bold;
   cursor: pointer;
-  font-weight: 600;
 }
 
-.result {
-  padding: 40px;
-  max-width: 1000px;
-  margin: auto;
+button:hover {
+  opacity: 0.9;
 }
+
+#results {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.chart-container {
+  width: 80%;
+  margin: 40px auto;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #777;
+}
+
