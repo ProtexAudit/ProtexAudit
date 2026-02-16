@@ -1,72 +1,111 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0a0a0a;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+}
+
+/* NAVBAR */
+
+.navbar {
+  padding: 20px 60px;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.3);
   background: #0d0d0d;
-  color: white;
-  font-family: Arial, sans-serif;
 }
 
-header {
-  padding: 20px 40px;
+.brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: linear-gradient(90deg, #C9A227, #FFD700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.logo {
-  color: #d4af37;
-  font-size: 22px;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
+/* HERO */
 
 .hero {
   text-align: center;
-  padding: 40px;
+  padding: 100px 20px 60px;
   max-width: 900px;
   margin: auto;
 }
 
 .hero h1 {
-  color: #d4af37;
+  font-size: 42px;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #C9A227, #FFD700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.scanner {
-  text-align: center;
-  margin: 30px 0;
+.hero p {
+  color: #cfcfcf;
+  font-size: 18px;
+  line-height: 1.6;
 }
 
-select, input {
-  padding: 12px;
-  margin: 10px;
-  width: 280px;
-  background: #1a1a1a;
-  border: 1px solid #d4af37;
-  color: white;
+/* SEARCH */
+
+.search-box {
+  margin-top: 40px;
 }
 
-button {
-  padding: 12px 20px;
-  background: #d4af37;
+.search-box input {
+  width: 400px;
+  padding: 14px;
+  border-radius: 8px;
   border: none;
-  color: black;
-  font-weight: bold;
+  background: #151515;
+  color: white;
+  outline: none;
+  font-size: 15px;
+}
+
+.search-box button {
+  padding: 14px 28px;
+  margin-left: 10px;
+  border-radius: 8px;
+  border: none;
   cursor: pointer;
+  font-weight: 600;
+  background: linear-gradient(90deg, #C9A227, #FFD700);
+  transition: 0.3s ease;
 }
 
-button:hover {
-  opacity: 0.9;
+.search-box button:hover {
+  opacity: 0.85;
 }
 
-#results {
-  text-align: center;
-  margin-top: 30px;
+/* RESULT CARD */
+
+.result {
+  max-width: 900px;
+  margin: 40px auto 100px;
+  padding: 0 20px;
 }
 
-.chart-container {
-  width: 80%;
-  margin: 40px auto;
-}
-
-footer {
-  text-align: center;
+.card {
+  background: #121212;
+  border: 1px solid rgba(212, 175, 55, 0.4);
   padding: 30px;
-  color: #777;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.08);
+}
+
+.card h2 {
+  margin-bottom: 20px;
+  color: #FFD700;
+}
+
+.card p {
+  margin-bottom: 10px;
+  color: #ddd;
 }
 
